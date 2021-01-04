@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// Solution for the problem https://www.hackerrank.com/challenges/java-loops/problem
+
 public class JavaLoops {
 
     public static void printSeq(int a, int b, int n) {

@@ -72,8 +72,18 @@ public class JavaLoopsTests {
     public void testPrintSeq() {
         TestData [] testData =
                 {
-                        new TestData(1, 2, 3, "3 7 15 \r\n"),
-                        new TestData(5, 5, 5, "10 20 40 80 160 \r\n")
+                        // new TestData(0, 0, 0, ""), // ?
+                        new TestData(0, 0, 1, "0 \r\n"), // boundary conditions
+                        new TestData(1, 0, 1, "1 \r\n"), // boundary conditions
+                        new TestData(0, 1, 1, "1 \r\n"), // boundary conditions
+                        new TestData(1, 1, 1, "2 \r\n"), // boundary conditions
+                        new TestData(1, 1, 2, "2 4 \r\n"), // boundary conditions
+                        new TestData(2, 2, 2, "4 8 \r\n"), // boundary conditions
+                        new TestData(49, 49, 1, "98 \r\n"), // boundary conditions
+                        new TestData(50, 50, 1, "100 \r\n"), // boundary conditions
+                        new TestData(50, 50, 15, "100 200 400 800 1600 3200 6400 12800 25600 51200 " +
+                                "102400 204800 409600 819200 1638400 \r\n") // boundary conditions
+                        // new TestData(aaa, aaa, aaa, "") // ? error prediction
                 };
 
         for (TestData currentTest : testData) {

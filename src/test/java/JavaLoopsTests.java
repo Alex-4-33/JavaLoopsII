@@ -81,8 +81,12 @@ public class JavaLoopsTests {
                         new TestData(2, 2, 2, "4 8 \r\n"), // boundary conditions
                         new TestData(49, 49, 1, "98 \r\n"), // boundary conditions
                         new TestData(50, 50, 1, "100 \r\n"), // boundary conditions
+                        new TestData(50, 50, 14, "100 200 400 800 1600 3200 6400 12800 25600 51200 " +
+                                "102400 204800 409600 819200 \r\n"), // boundary conditions
                         new TestData(50, 50, 15, "100 200 400 800 1600 3200 6400 12800 25600 51200 " +
                                 "102400 204800 409600 819200 1638400 \r\n") // boundary conditions
+                        // new TestData(0, 0, -1, "") // ? error prediction
+                        // new TestData(-1, -1, -1, "") // ? error prediction
                         // new TestData(aaa, aaa, aaa, "") // ? error prediction
                 };
 
